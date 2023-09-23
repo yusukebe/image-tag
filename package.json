@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "wrangler dev --live-reload src/index.tsx",
+    "dev:remote": "wrangler dev --remote src/index.tsx",
+    "deploy": "wrangler deploy --minify src/index.tsx"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.1.8",
+    "hono": "^3.7.2",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230821.0",
+    "wrangler": "^3.9.0"
+  }
+}
